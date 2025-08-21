@@ -1,0 +1,160 @@
+* {
+   box-sizing: border-box; 
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+.navibar {
+    display: flex;
+    background-color: #3a3b3d;
+}
+.navibar a {
+    padding: 15px 20px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+.navibar a:hover{
+    background-color: #808387;
+    color: black;
+}
+.footer {
+    padding: 10px;
+    text-align: center;
+    background-color: #13EC99;
+}
+
+body {
+    margin: 0px;
+}
+.header {
+    padding: 60px;
+    text-align: center;
+    background-color: #ec9913;
+    color: white;
+} 
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.side {
+    flex: 20%;
+    background-color: #525669;
+    padding: 10px;
+}
+.sideitem a {
+    display: flex;
+    text-decoration: none;
+    color: white;
+    flex-direction: row;
+    background-color: #3a3b3d;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.sideitem a:hover {
+    background-color: #808387;
+}
+.main {
+    flex: 80%;
+    padding: 10px 10px 10px 10px
+
+}
+.searchbar {
+    padding: 10px;
+    align-items: center;
+    display: flex;
+    margin-left: auto;
+    
+}
+.inputsearch {
+    margin-right: 10px;
+    height: 30px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    text-indent: 5px;
+}
+.GoButton {
+    border: none;
+    background-color: #13EC99;
+    height: 30px;
+    padding: 0px 10px 0px 10px;
+    border-radius: 10px;
+}
+.GoButton:hover {
+    background-color: #0a7d5e;
+    color: white;
+    cursor: pointer;
+    
+}
+
+
+table, tr, td {
+    border: 1px solid #b5b5b5;
+    border-collapse: collapse;
+    padding: 10px;
+    
+}
+.colum {
+    display: flex;
+    
+}
+
+.columrow {
+    padding: 10px;
+}
+
+.inputrowa{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: auto;
+    justify-content: space-evenly;
+}
+
+.inputbutton {
+    margin: 10px 0px 0px 0px;
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+}
+
+.inputbutton:hover {
+    filter: brightness(0.9);
+    cursor: pointer;
+}
+
+#inputbutton input {
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-indent: 5px;
+}
+
+#inputbutton h3 {
+    line-height: 0.5px;
+}
+
+@media screen and (max-width: 700px){
+    .row, .navibar, .colum{
+        flex-direction: column;
+    }
+    .searchbar {
+        margin:auto;
+    }
+    .inputrowa {
+        width: 100%;
+    }
+    iframe {
+        width: 100%;
+    }
+    
+}
+
+/* use 
+order: ; to rearrange flexbox */
